@@ -16,6 +16,8 @@ int main(){
     printf("The following numbers are all integers :\n");
     printf("1\t2\t3\n4\t5\t6\n7\t8\t9\n");
     printf("\"Force equals mass time acceleration\"- Issac Newton\n");
-    printf("\"time is money\"-Martin Luther King");
+    printf("\"time is money\"-Martin Luther King\n");
+    
+
     return 0;
 }
