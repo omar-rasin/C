@@ -6,12 +6,11 @@
     x = 5;
     y = 4;
 
-    printf("x,y");
 
     x = x+y;
     y = x-y;
     x = x-y;
-    printf("After switching the initial values of 5,4 are %d,%d", x,y);
+    printf("After switching , the initial values of 5,4 are %d,%d", x,y);
 
     return 0;
  }
