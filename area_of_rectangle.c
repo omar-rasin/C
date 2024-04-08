@@ -1,9 +1,16 @@
 /* Write a C program to calculate the area of a rectangle given its length and width. */
 #include<stdio.h>
+
 int main(){
-    int length,width;
+
+    float length,width,area;
+
     length = 6;
     width = 5 ;
-    printf("The area of the rectangle is %d", length*width);
+
+    area = length*width;
+
+    printf("The area of the rectangle is %f", area );
+    
     return 0;
 }
