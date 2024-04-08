@@ -3,14 +3,18 @@
 
 int main(){
 
-    float length,width,area;
+    float length, width, area;
 
-    length = 6;
-    width = 5 ;
+    printf(" Please enter the length: ");
+    scanf("%f", &length);
+
+    printf(" Please enter the width: ");
+    scanf("%f", &width);
 
     area = length*width;
 
-    printf("The area of the rectangle is %f", area );
+    printf("The area of the rectangle is %f", area);
+
     
     return 0;
 }
