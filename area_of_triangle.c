@@ -5,10 +5,14 @@ int main(){
 
     float base, height, area;
 
-    base = 12;
-    height = 8;
+    printf(" Please enter the base: ");
+    scanf("%f", &base);
 
-    area = base*height*(1.0/2.0);
+    printf(" Please enter the height: ");
+    scanf("%f", &height);
+
+    area = base*height*0.5;
+    
 
     printf("The area of the triangle is %f", area);
 
