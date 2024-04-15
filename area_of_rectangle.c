@@ -1,7 +1,7 @@
 /* Write a C program to calculate the area of a rectangle given its length and width. */
 #include<stdio.h>
 
-int main(){
+    int main() {
 
     float length, width, area;
 
