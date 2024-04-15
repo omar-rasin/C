@@ -4,6 +4,7 @@ It will then then check whether or not that square can be placed inside that cir
 */
 
 #include<stdio.h>
+#include<math.h>
 
 int main() {
 
@@ -15,7 +16,7 @@ int main() {
     printf("Enter the side length of a square: ");
     scanf("%f", &a);
 
-    diagonal = 1.4142135*a; //sqrt 2*side
+    diagonal = sqrt(2)*a; //sqrt 2*side
     diameter = 2*r;
 
     if (diagonal <= diameter){
@@ -23,8 +24,5 @@ int main() {
     }else printf("Cannot be placed");
 
     return 0;
-
-
-
 
 }
