@@ -1,7 +1,7 @@
 /* Write a C program to calculate the average of three numbers entered by the user. */
 #include<stdio.h>
 
-int main(){
+int main() {
 
     float x,y,z,avg;
 
