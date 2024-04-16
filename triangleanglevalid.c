@@ -6,21 +6,15 @@ and check whether the triangle is valid or not.
 
 int main() {
 
-    float a,b,c,sum;
+    float angle1,angle2,angle3,sum;
 
-    printf("Enter the first angle of the triangle: ");
-    scanf("%f", &a);
+    printf("Enter the three angles of the triangle : ");
+    scanf("%f %f %f", &angle1,&angle2,&angle3);
 
-    printf("Enter the second angle of the triangle: ");
-    scanf("%f", &b);
+    sum = angle1 + angle2 + angle3;
 
-    printf("Enter the third angle of the triangle: ");
-    scanf("%f", &c);
-
-    sum = a+b+c;
-
-    if ( sum == 180){
-        printf("Valid");
+    if (sum == 180){
+        printf("valid");
     }else printf("Invalid");
 
     return 0;
