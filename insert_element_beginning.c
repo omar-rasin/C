@@ -20,15 +20,19 @@ int main() {
     printf("Enter the element to insert: ");
     scanf("%d", &element);
 
-    for(int i=size; i>0; i--){
-        array[i] = array[i-1]; //right shift
+    int arrayB[size++];
+
+    for(int i=0; i<size-1; i++){
+        arrayB[i+1] = array[i]; //right shift
     }
-    array[0] = element;
-    size++;
+
+    arrayB[0] = element;
 
     printf("The new array is: \n");
+
     for(int i=0; i<size; i++){
-        printf("%d ", array[i]);
+
+        printf("%d ", arrayB[i]);
     }
     printf("\n");
 
