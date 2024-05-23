@@ -19,7 +19,7 @@ int main() {
         }
     }
 
-    int symettrical = 1;
+    int  symettrical = 1;
 
     for(int i=0; i<rows; i++){
         for(int j=0; j<columns; j++){
