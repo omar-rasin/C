@@ -19,12 +19,17 @@ int main() {
     printf("Enter the element to insert: ");
     scanf("%d", &element);
 
-    array[size] = element; //placing element at the free position at the end of the array
-    size++;
+   int arrayB[size++];
+
+   for(int i=0; i<size-1; i++){
+    arrayB[i] = array[i];
+   }
+
+   arrayB[size-1] = element; 
 
     printf("New array is:\n");
     for(int i=0; i<size; i++){
-        printf("%d ", array[i]);
+        printf("%d ", arrayB[i]);
     }
     printf("\n");
     return 0;
