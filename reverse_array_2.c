@@ -15,10 +15,9 @@ int main() {
     }
 
       int k = 0; 
-         for (int i = size - 1; i >= 0; i--) { 
-        for (int j = k; j < k + 1; j++) { 
-            reverseArray[j] = array[i];
-        }
+         for (int i = size - 1; i >= 0; i--) {
+            reverseArray[k] = array[i];
+        
         k++; 
     }
 
