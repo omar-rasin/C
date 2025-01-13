@@ -18,19 +18,16 @@ Write the needed number of flagstones.
 
 int main() {
 
-    double n,m,a;
-    scanf("%1f %1f %1f", &n, &m, &a);
+    long long n,m,a;
+    scanf("%lld %lld %lld", &n, &m, &a);
 
     //Let 'x' be the number of flagstones required
 
-    double x;
-    x = ((n*m) / (a*a));    
+    long long x;
+    x = ceil((double)n / a) * ceil((double)m / a);
 
-    if(x != (int)x) {
-        x+=2;
-    }
-
-    printf("%d", (int)x);
+    
+    printf("%lld\n", x);
 
     return 0;
 }

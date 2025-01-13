@@ -19,35 +19,35 @@ If Vasya managed to say hello, print "YES", otherwise print "NO".
 
 int main() {
 
-    char s[101];
+    char s[110];
     scanf("%s", &s);
 
-    int h=0,e=0,l=0,o=0;
+    char h[] = "hello";
 
-    int len = strlen(s);
+    int count = 0;
 
-    if(len<=5) {
-        printf("NO");
-    }else {
+    int j=0;
 
-        for(int i=0; s[i] != '\0'; i++) {
+    for(int i=0; s[i] != '\0'; i++) {
 
-            if(s[i] == 'h' ||s[i] == 'H' ) {
-                h++;
-            }else if(s[i] == 'e'||s[i] == 'E' ) {
-                e++;
-            }else if(s[i] == 'l'||s[i] == 'L' ) {
-                l++;
-            }else if(s[i] == 'o'||s[i] == 'O' ) {
-                o++;
-            }
+        if(s[i] ==h[j]) {
+            j++;
+            count++;
         }
 
-        
-    }if(h>=1 && e>=1 && l>=2 && o>=1) {
-        printf("YES");
+        if(count == 5) {
+            
+            printf("YES\n");
+
+            return 0;
+
+        }
     }
 
-    return 0;
+    printf("NO\n");
 
+    
+
+    return 0;
+             
 }

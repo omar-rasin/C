@@ -27,8 +27,8 @@ Print the resulting string. It is guaranteed that this string is not empty.
 
 int main() {
 
-    char str[101];
-    char result[202];
+    char str[105];
+    char result[205];
 
     fgets(str, sizeof(str), stdin);
     str[strcspn(str, "\n")] = '\0';
@@ -44,7 +44,7 @@ int main() {
     //Places . behind each consonant
 
     for(int i=0; str[i] != '\0'; i++) {
-        if(str[i] != 'a'&& str[i] != 'e'&& str[i] != 'i'&& str[i] != 'o'&& str[i] != 'u') {
+        if(str[i] != 'a'&& str[i] != 'e'&& str[i] != 'i'&& str[i] != 'o'&& str[i] != 'u' && str[i] != 'y') {
             result[j++] = '.';
             result[j++] = str[i];
         }
